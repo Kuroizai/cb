@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	min-width: 710;
+}
+
+body{
+	background-color: #ECF0F4;
+
+}
+
+
+
+.navbar{
+    transition: all 0.8s;
+}
+
+.head{
+    background: url("../assets/expo2020.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    transition: all 0.8s;
+}
+
+.n-5{
+    margin-top: -8rem!important;
+}
+
+/* .image-holder{ */
+	/* display: none; */
+	/* width: 100vw; */
+    /* height: 20vh; */
+    /* object-fit: contain; */
+	/* position: relative; */
+    /* z-index: -100; */
+/* } */
+.vertical-nav{
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    transition: all 0.5s;
+}
+
+
+#sidebarCollapse{
+    position: fixed;
+}
+
+#sidebar.active{
+    margin-left: -17rem;
+
+}
+
+
+#content-page.active{
+    width: 100%;
+    margin: 0;
+}
+
+
+.dash-contents{
+    width: calc(100%-17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+}
+
+
+
