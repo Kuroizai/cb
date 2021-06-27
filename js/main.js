@@ -14,11 +14,12 @@ $(function(){
   });
 });
 
-var myfavicon = $(".fa")
+// var myfavicon = $(".fa")
 
-$('.select').hover(function(){
-  $(this).addClass("text-danger");
-},function(){
-  $(this).removeClass("text-danger");
-}
-)
+// $('.select').hover(function(){
+//   $(this).addClass("text-danger");
+// },function(){
+//   $(this).removeClass("text-danger");
+// }
+// )\
+
