@@ -83,36 +83,42 @@
         
 
         <div class="container py-5 px-5 bg-white">
-            <table id="myTable" class="table mt-3">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Row 1 Data 1</td>
-                        <td>Row 1 Data 2</td>
-                        <td>
-                            <!-- #Add Id to edit or delete on php -->
-                            <a href="dash-edit.html" class="edit pr-3"><i class="fa fa-pencil"></i></a>
-                            <a href="dash-delete.html" class="delete "><i class="fa fa-trash"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Row 2 Data 1</td>
-                        <td>Row 2 Data 2</td>
-                        <td>
-                            <!-- #Add Id to edit or delete on php -->
-                            <a href="dash-edit.html" class="edit pr-3"><i class="fa fa-pencil"></i></a>
-                            <a href="dash-delete.html" class="delete "><i class="fa fa-trash"></i></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <h2 class="text-center">Delete</h2>
+            <!-- <?php if ($msg): ?> -->
+            <p><?=$msg?></p>
+            <!-- <?php else: ?> -->
+            <p>Are you sure you want to delete #<?=$data['id'];?>?</p>
+            <div class="px-5 my-5">
+                <table class="table ">
+                    <thead class="thead-dark">
+                        <tr class="table-light">
+                            <th scope="col">#</th>
+                            <th scope="col">Daerah</th>
+                            <th scope="col">Jumlah Penduduk</th>
+                            <th scope="col">Telah Divaksin</th>
+                            <th scope="col">Jumlah Keluhan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <?php foreach($data['get'] as $datas): ?> -->
+                        <tr class="table-light">
+                            <th scope="row"><?= $datas['Nomor'] ;?></th>
+                            <td><?= $datas['Nama Daerah'] ;?></td>
+                            <td><?= $datas['Jumlah Penduduk'] ;?></td>
+                            <td><?= $datas['Jumlah Tervaksin'] ;?></td>
+                            <td><?= $datas['Jumlah Keluhan'] ;?></td>
+                        </tr>
+                        
+                        <!-- <?php endforeach;?> -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="yesno">
+                <a class="btn btn-outline-primary" href="">Yes</a> <!--../dash-delete.html/..../<?=$data['id'];?>-->
+                <a class="btn btn-outline-primary" href="">No</a>
+            </div>
+            <!-- <?php endif; ?> -->
+            </div>
         
 
     </section>
@@ -120,10 +126,5 @@
 
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#myTable').DataTable();
-        });
-    </script>
 </body>
 </html>
