@@ -4,6 +4,9 @@
 	box-sizing: border-box;
 	min-width: 710;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
 	background-color: #ECF0F4;
@@ -22,8 +25,11 @@ body{
 	}
 }
 
-.log-holder{
+
+
+#log_page{
     background: linear-gradient(-45deg, #ee7752, #F6AAD1, #B0DDF0, #FBF7AE);
+
     background-attachment: fixed;
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -51,9 +57,23 @@ body{
     transition: all 0.8s;
 }
 
-.n-5{
-    margin-top: -8rem!important;
+.priorityview{
+    z-index: 3;
 }
+
+.nt-3{
+    margin-top: -3rem;
+}
+
+.nt-5{
+    margin-top: -5rem;
+}
+
+.nt-15{
+    margin-top: -15rem;
+}
+
+
 
 /* .image-holder{ */
 	/* display: none; */
@@ -102,3 +122,4 @@ body{
     color: #080808;
     /* display: none; */
 }
+
